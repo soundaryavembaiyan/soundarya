@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pdf files</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIftqiOmu8lSB245qmhb0-99qrcXYmVmtHOg&usqp=CAU.jpg');
+  
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+   PDF
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top"><center>UPLOADING FILES</center></h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    
+  </div>
+<center>
+<p class="w3-large w3-center"><b>upload your files here..</b></p>
+
+<form enctype="multipart/form-data" action="ok.html" method="post">
+  <p>Select files: 
+<input type="file" id="myFile" name="filename" multiple> </p>
+ <p> <input type="submit" value="Upload"  required> </p>
+</form>
+
+</center>
+<p>Click the "Check" button, if the file upload button accept multiple files.</p>
+<button onclick="myFunction()">Check</button>
+
+<p id="demo"></p>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile").multiple;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<footer>
+<center>
+  <div class="w3-display-bottomleft w3-padding-large">Done by <a href="£" target="_blank">Soundarya Vembaiyan</a></div>
+</center>
+</footer>
+
+</body>
+</html>
+
+
+
+ 
+
+
